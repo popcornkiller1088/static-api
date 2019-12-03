@@ -5,7 +5,8 @@
     "static-api": "bin/index.js"
   },
   "scripts": {
-    "gaga": "static-api"
+    "gaga": "static-api",
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parse": "^0.1.0",
@@ -16,5 +17,23 @@
     "fs-extra": "^8.1.0",
     "knex": "^0.20.3",
     "recursive-readdir": "^2.2.2"
-  }
+  },
+  "description": "A bundled library to let you build express in seconds",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popcornkiller1088/static-api.git"
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "kenneth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/popcornkiller1088/static-api/issues"
+  },
+  "homepage": "https://github.com/popcornkiller1088/static-api#readme"
 }
