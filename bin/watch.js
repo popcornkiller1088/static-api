@@ -1,11 +1,12 @@
 const chokidar = require('chokidar')
 const watcher = chokidar.watch(process.env.PWD + '/api')
+const path = require('path')
 
 let node 
 
 function run() {
   const { spawn } = require('child_process')
-  node = spawn('node', ['./bin/run.js'])
+  node = spawn('node', [path.resolve(__filename, '../../bin/run.js')])
   
   node.stdout.on('data', (data) => {
     console.log(`${data}`)
