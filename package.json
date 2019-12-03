@@ -1,6 +1,6 @@
 {
   "name": "@popcornkiller/static-api",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "bin": {
     "static-api": "bin/index.js"
   },
