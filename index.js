@@ -1,0 +1,1 @@
+exports.db = require('knex')(require(resolve(process.env.PWD + '/knexfile')))

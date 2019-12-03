@@ -1,0 +1,4 @@
+DB_TYPE=pg
+DB_NAME=
+DB_PASSWORD=password
+DB_USER=postgres
