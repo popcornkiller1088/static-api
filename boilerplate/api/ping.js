@@ -1,7 +1,10 @@
 const router = require('express').Router()
+const { resolve } = require('path')
+const { db } = require('@popcornkiller/static-api')
 
 router.get('/', async (req, res) => {
-  res.json('pong')
+  const data = await db('post')
+  res.json(data)
 })
 
 module.exports = router
